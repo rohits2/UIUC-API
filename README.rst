@@ -4,6 +4,7 @@ What is this?
 -------------
 This is an interface to the UIUC Course Explorer API.  It allows for the easy querying of class statuses from inside Python.
 This library supports both async and standard queries to the API, as well as querying for specific CRNs.
+
 Basic usage
 -----------
 ::
