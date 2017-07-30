@@ -16,7 +16,6 @@ The API is very simple to use:
 
 Advanced features
 -----------------
-If ::uiucapi.aioquery
-is used instead of query, the get_course and get_section methods provided will be non-blocking coroutines instead of
+If `uiucapi.aioquery` is used instead of query, the get_course and get_section methods provided will be non-blocking coroutines instead of
 blocking methods.
 
