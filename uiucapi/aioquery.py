@@ -2,8 +2,8 @@ import xml.etree.ElementTree as ElementTree
 
 import aiohttp
 
-from objects.courseobjects import Course, Section
-from uiucapi.parse import __parse_course_string_to_url, __parse_section_string_to_url
+from utility.courseobjects import Course, Section
+from utility.parse import __parse_course_string_to_url, __parse_section_string_to_url
 
 
 async def get_course(course: str) -> Course:
