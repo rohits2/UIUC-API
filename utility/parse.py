@@ -11,8 +11,8 @@ def __parse_course_string_to_url(course: str) -> str:
     :return: The information on the course
     """
     url_format = "https://courses.illinois.edu/cisapp/explorer/schedule/{year}/{season}/{subject}/{course}.xml?mode=cascade"
-    season, year = __extract_course_time(course)
-    subject, course = __extract_course_name(course)
+    season, year, *_ = __extract_course_time(course)
+    subject, course, *_ = __extract_course_name(course)
     url = url_format.format(year=year, season=season, subject=subject, course=course)
     return url
 
@@ -26,9 +26,9 @@ def __parse_section_string_to_url(course: str) -> str:
     :return: The information on the course
     """
     url_format = "https://courses.illinois.edu/cisapp/explorer/schedule/{year}/{season}/{subject}/{course}/{crn}.xml"
-    season, year = __extract_course_time(course)
+    season, year, *_ = __extract_course_time(course)
     crn = __extract_crn(course)
-    subject, course = __extract_course_name(course)
+    subject, course, *_ = __extract_course_name(course)
     url = url_format.format(year=year, season=season, subject=subject, course=course, crn=crn)
     return url
 
