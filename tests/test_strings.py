@@ -2,21 +2,21 @@ import pytest
 
 
 def test_parse_course_string_to_url():
-    from uiucapi.aioquery import __parse_course_string_to_url
+    from uiucapi.parse import __parse_course_string_to_url
     string = "CS 374 FA17 CRN66445"
     result = "https://courses.illinois.edu/cisapp/explorer/schedule/2017/fall/CS/374.xml?mode=cascade"
     assert __parse_course_string_to_url(string) == result
 
 
 def test_parse_section_string_to_url():
-    from uiucapi.aioquery import __parse_section_string_to_url
+    from uiucapi.parse import __parse_section_string_to_url
     string = "CS 374 FA17 CRN66445"
     result = "https://courses.illinois.edu/cisapp/explorer/schedule/2017/fall/CS/374/66445.xml"
     assert __parse_section_string_to_url(string) == result
 
 
 def test_extract_course_name():
-    from uiucapi.aioquery import __extract_course_name
+    from uiucapi.parse import __extract_course_name
     string1 = "CS 374 FA17 CRN66445"
     string2 = "CS 374 CRN66445"
     string3 = "CS 374    \n"
@@ -27,7 +27,7 @@ def test_extract_course_name():
 
 
 def test_extract_crn():
-    from uiucapi.aioquery import __extract_crn
+    from uiucapi.parse import __extract_crn
     string1 = "CS 374 FA17 CRN66445"
     string2 = "CS 374 CRN66445"
     string3 = "CS 374"
@@ -42,7 +42,7 @@ def test_extract_crn():
 
 
 def test_extract_course_time():
-    from uiucapi.aioquery import __extract_course_time
+    from uiucapi.parse import __extract_course_time
     string1 = "CS 374 FA17 CRN66445"
     string2 = "CS 374 CRN66445"
     string3 = "SP19 XJ34"
