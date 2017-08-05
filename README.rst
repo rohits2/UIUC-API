@@ -1,6 +1,6 @@
 UIUC CourseExplorer API
 =======================
-:ci: .. image:: https://circleci.com/gh/rohits2/UIUC-API/tree/master.svg?style=shield
+:Tests: .. image:: https://circleci.com/gh/rohits2/UIUC-API/tree/master.svg?style=shield
 What is this?
 -------------
 This is an interface to the UIUC Course Explorer API.  It allows for the easy querying of class statuses from inside Python.
