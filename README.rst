@@ -15,6 +15,29 @@ The API is very simple to use:
     for section in course.sections:
         print(section.registration_status)
 
+Object Types
+------------
+Requests to the UIUC API will return one of the following objects, with the following properties:
+
+- Course
+    - subject
+    - name
+    - description
+    - credit_hours
+    - gened_categories
+    - sections
+- Section
+    - crn
+    - section_number
+    - registration_status
+    - start_date
+    - end_date
+- GenedCategory
+    - code
+    - description
+
+
+
 Advanced features
 -----------------
 If :code:`uiucapi.aioquery` is used instead of query, the :code:`get_course` and :code:`get_section` methods provided will be non-blocking coroutines instead of
