@@ -7,7 +7,7 @@ class GenedCategory:
     def __init__(self, xml_root: Element):
         self.__type = xml_root.attrib['id']
         self.__description = xml_root.find("./description").text.strip()
-    
+
     @property
     def code(self) -> str:
         return self.__type
@@ -15,6 +15,7 @@ class GenedCategory:
     @property
     def description(self) -> str:
         return self.__description
+
 
 class Section:
     def __init__(self, xml_root: Element):
@@ -73,8 +74,12 @@ class Course:
         return self.__credit_hours
 
     @property
-    def gened_categories(self) -> List[GenedCategory]:
-        return self.__gened_categories
+    def gened_categories(self) -> List[str]:
+        return [cat.code for cat in self.__gened_categories]
+
+    @property
+    def gened_descriptions(self) -> List[str]:
+        return [cat.description for cat in self.__gened_categories]
 
     @property
     def sections(self) -> List[Section]:

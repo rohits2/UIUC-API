@@ -70,5 +70,6 @@ def test_sync_get_geneds():
     course1 = "AAS 100 SP12 CRN54572"
     result1 = get_course(course1)
     assert result1.credit_hours == 3
-    assert result1.gened_categories[0].code == "SBS"
-    assert result1.gened_categories[0].description == "Social & Behavioral Sciences"
+    assert result1.gened_categories == ["SBS", "CNW"]
+    assert result1.gened_descriptions == ["Social & Behavioral Sciences",
+                                          "Cultural Studies: Non-Western/U.S. Minority Culture(s)"]
