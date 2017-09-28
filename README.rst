@@ -9,8 +9,10 @@ UIUC CourseExplorer API
     :target: https://github.com/rohits2/UIUC-API
 How do I install this?
 ----------------------
+Installation is easy with pip:
 ::
     sudo pip3 install uiucapi
+
 What is this?
 -------------
 This is an interface to the UIUC Course Explorer API.  It allows for the easy querying of class statuses from inside Python.
