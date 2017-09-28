@@ -1,5 +1,9 @@
 UIUC CourseExplorer API
 =======================
+
+.. image:: https://api.codacy.com/project/badge/Grade/df755ff6ff664a6da27953e0fbc57644
+   :alt: Codacy Badge
+   :target: https://www.codacy.com/app/singhrohit2/UIUC-API?utm_source=github.com&utm_medium=referral&utm_content=rohits2/UIUC-API&utm_campaign=badger
 .. image:: https://circleci.com/gh/rohits2/UIUC-API/tree/master.svg?style=shield
 What is this?
 -------------
