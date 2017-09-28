@@ -7,7 +7,14 @@ class GenedCategory:
     def __init__(self, xml_root: Element):
         self.__type = xml_root.attrib['id']
         self.__description = xml_root.find("./description").text.strip()
+    
+    @property
+    def code(self) -> str:
+        return self.__type
 
+    @property
+    def description(self) -> str:
+        return self.__description
 
 class Section:
     def __init__(self, xml_root: Element):

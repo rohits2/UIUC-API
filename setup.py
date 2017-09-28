@@ -13,7 +13,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='uiucapi',
-    version='1.0.1',
+    version='1.0.2',
 
     description='A simple interface to the UIUC course explorer API',
     long_description=long_description,

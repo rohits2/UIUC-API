@@ -63,3 +63,12 @@ def test_sync_get_course():
         fail("This course does not exist!")
     except IOError:
         pass
+
+
+def test_sync_get_geneds():
+    from uiucapi.query import get_course
+    course1 = "AAS 100 SP12 CRN54572"
+    result1 = get_course(course1)
+    assert result1.credit_hours == 3
+    assert result1.gened_categories[0].code == "SBS"
+    assert result1.gened_categories[0].description == "Social & Behavioral Sciences"
