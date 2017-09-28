@@ -44,6 +44,6 @@ Requests to the UIUC API will return one of the following objects, with the foll
 
 Advanced features
 -----------------
-If :code:`uiucapi.aioquery` is used instead of query, the :code:`get_course` and :code:`get_section` methods provided will be non-blocking coroutines instead of
-blocking methods.
+If :code:`uiucapi.aioquery` is used instead of query, the :code:`get_course` and :code:`get_section` methods provided will be Python 3 async coroutines instead of
+normal blocking methods.
 
