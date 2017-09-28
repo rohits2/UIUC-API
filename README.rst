@@ -1,12 +1,12 @@
 UIUC CourseExplorer API
 =======================
 
-.. image:: https://api.codacy.com/project/badge/Grade/df755ff6ff664a6da27953e0fbc57644
-   :alt: Codacy Badge
-   :target: https://www.codacy.com/app/singhrohit2/UIUC-API?utm_source=github.com&utm_medium=referral&utm_content=rohits2/UIUC-API&utm_campaign=badger
-.. image:: https://circleci.com/gh/rohits2/UIUC-API/tree/master.svg?style=shield
+..  image:: https://api.codacy.com/project/badge/Grade/df755ff6ff664a6da27953e0fbc57644
+    :alt: Codacy Badge
+    :target: https://www.codacy.com/app/singhrohit2/UIUC-API?utm_source=github.com&utm_medium=referral&utm_content=rohits2/UIUC-API&utm_campaign=badger
+..  image:: https://circleci.com/gh/rohits2/UIUC-API/tree/master.svg?style=shield
     :alt: Test Badge
-   :target: https://github.com/rohits2/UIUC-API
+    :target: https://github.com/rohits2/UIUC-API
 What is this?
 -------------
 This is an interface to the UIUC Course Explorer API.  It allows for the easy querying of class statuses from inside Python.
